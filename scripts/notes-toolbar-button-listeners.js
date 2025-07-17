@@ -20,8 +20,6 @@ blackTextButton.addEventListener('click', () => {
   blackTextButton.classList.add('individual-container-active');
   redTextButton.classList.remove('individual-container-active');
   blueTextButton.classList.remove('individual-container-active');
-
-  console.log(id);
 });
 
 redTextButton.addEventListener('click', () => {
