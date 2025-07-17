@@ -1,0 +1,69 @@
+.header {
+  background-color: rgb(254, 250, 224);
+  display: grid;
+  grid-template-columns: 250px 1fr 250px;
+  align-items: center;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo {
+  width: 65px;
+  object-fit: contain;
+  margin-left: 25px;
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.site-title {
+  font-weight: bold;
+  font-size: 28px;
+  color: rgb(40, 54, 24);
+  cursor: pointer;
+}
+
+.middle-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 110px;
+}
+
+.page-title {
+  font-size: 31px;
+  color: rgb(30, 54, 24);
+
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 25px;
+}
+
+
+.profile-picture-container {
+  width: 44px;
+  height: 44px;
+  border-radius: 21.75px;
+  background-color: rgb(96, 108, 56);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-picture-container:hover {
+  cursor: pointer;
+}
+
+.profile-picture {
+  width: 38px;
+  border-radius: 19px;
+}
+
+

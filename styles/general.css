@@ -1,0 +1,8 @@
+body {
+  font-family: Shantell Sans, Arial;
+  display: grid;
+  grid-template-rows: 90px 1fr;
+  margin: 0;
+  margin-bottom: 75px;
+  background-color: rgb(254, 250, 224);
+}

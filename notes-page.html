@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Turtl Task</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/writing-area.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/toolbar.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght,BNCE,INFM,SPAC@0,300..800,-100..100,0..100,0..100;1,300..800,-100..100,0..100,0..100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img class="logo" src="turtle.png" />
+        <p class="site-title">Turtl Task</p>
+      </div>
+
+      <div class="middle-section">
+        <div class="page-title">Notes</div>
+      </div>
+
+      <div class="right-section">
+        <div class="profile-picture-container">
+          <img class="profile-picture" src="icons/siddh-channel.png" />
+        </div>
+      </div>
+    </header>
+
+    <div class="content">
+      <nav class="navbar"></nav>
+
+      <main class="writing-area">
+        <div class="title-text-container">
+          <div
+            class="title-text"
+            data-placeholder="Your Title Here"
+            contenteditable="true"
+          ></div>
+        </div>
+
+        <div class="notes-text-container">
+          <div
+            class="notes-text"
+            data-placeholder="Type anything..."
+            contenteditable="true"
+          ></div>
+        </div>
+      </main>
+
+      <aside class="toolbar">
+        <div class="new-note-container">
+          <div class="individual-container plus-container">
+            <img class="plus-icon" src="icons/plus-icon.png" />
+          </div>
+        </div>
+
+        <div class="text-color-container">
+          <div class="individual-container black-container">
+            <div class="black"></div>
+          </div>
+
+          <div class="individual-container red-container">
+            <div class="red"></div>
+          </div>
+
+          <div class="individual-container blue-container">
+            <div class="blue"></div>
+          </div>
+        </div>
+
+        <div class="text-style-container">
+          <div class="individual-container bold-container">
+            <div class="bold">B</div>
+          </div>
+
+          <div class="individual-container italic-container">
+            <div class="italic">I</div>
+          </div>
+
+          <div class="individual-container underline-container">
+            <div class="underline">U</div>
+          </div>
+
+          <div class="individual-container size-container">
+            <div class="size">M</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <script src="scripts/utils/storage.js"></script>
+    <script src="scripts/utils/text.js"></script>
+    <script src="scripts/notes.js"></script>
+    <script src="scripts/notes-toolbar-button-listeners.js"></script>
+  </body>
+</html>

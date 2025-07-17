@@ -1,0 +1,133 @@
+.toolbar {
+  width: 67.7px;
+  height: 515.3px;
+  position: fixed;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  right: 20px;
+  top: 200px;
+}
+
+@media (max-width: 1500px) {
+  .toolbar {
+    top: 160px;
+  }
+}
+
+.new-note-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(30, 54, 24);
+  width: 67.7px;
+  height: 48.6px;
+  border-radius: 13px;
+  padding: 9.5px 0;
+}
+
+.text-color-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(30, 54, 24);
+  width: 67.7px;
+  height: 166.6px;
+  border-radius: 13px;
+  padding: 9.5px 0;
+}
+
+.text-style-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(30, 54, 24);
+  width: 67.7px;
+  height: 225.5px;
+  border-radius: 13px;
+  padding: 9.5px 0;
+}
+
+.individual-container {
+  width: 48.4px;
+  height: 48.4px;
+  background-color: rgb(96, 108, 56);
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.1s;
+}
+
+.individual-container:hover {
+  /* background-color: rgb(88, 95, 50); */
+  cursor: pointer;
+}
+
+.individual-container.plus-container:hover {
+  background-color: rgb(88, 95, 50);
+}
+
+.individual-container.plus-container:active {
+  background-color: rgb(72, 82, 40);
+}
+.individual-container-active {
+  background-color: rgb(72, 82, 40);
+  cursor: pointer;
+}
+
+.plus-icon {
+  width: 44px;
+}
+
+.black {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(30, 30, 30);
+  border-radius: 13px;
+}
+
+.red {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(188, 71, 73);
+  border-radius: 13px;
+}
+
+.blue {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(69, 123, 157);
+  border-radius: 13px;
+}
+
+.bold,
+.italic,
+.underline,
+.size {
+  font-size: 31px;
+  font-family: Shantell Sans, Arial;
+  color: rgb(30, 30, 30);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}

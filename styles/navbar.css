@@ -1,0 +1,107 @@
+.navbar {
+  position: fixed;
+
+  background-color: rgb(30, 54, 24);
+  height: 678px;
+  width: 213px;
+  border-radius: 13px;
+  margin-top: 40px;
+  margin-left: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 11px;
+  box-shadow: 0 4 4 black;
+}
+
+.navbox {
+  background-color: rgb(96, 108, 56);
+  width: 193px;
+  height: 76px;
+  border-radius: 13px;
+  transition: background-color 0.1s;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 1750px) {
+  .navbar {
+    margin-top: 8px;
+  }
+}
+
+.navbox:hover {
+  background-color: rgb(88, 95, 50);
+  cursor: pointer;
+}
+
+.navbox:hover:has(.delete-navbox-button:hover) {
+  background-color: rgb(96, 108, 56);
+}
+
+.navbox.navbox-active:hover {
+  background-color: rgb(72, 82, 40);
+}
+
+.navbox.navbox-active:hover:has(.delete-navbox-button:hover) {
+  background-color: rgb(72, 82, 40);
+}
+
+.navbox-active {
+  background-color: rgb(72, 82, 40);
+  cursor: pointer;
+}
+
+.nav-note-title {
+  margin: 12px 0 0 10px;
+  color: rgb(30, 30, 30);
+  font-weight: bold;
+  user-select: none;
+}
+
+.nav-note-excerpt {
+  font-size: 12px;
+  margin: 5px 8px 0 10px;
+  color: rgb(30, 30, 30);
+  user-select: none;
+}
+
+.top-navbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.delete-navbox-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 7px;
+  margin-top: 8px;
+  margin-right: 5px;
+  border: solid 2px rgb(30, 54, 24);
+  background-color: rgb(72, 82, 40);
+  padding: 0;
+  cursor: pointer;
+
+  font-size: 10px;
+}
+
+.navbar-placeholder-container {
+  display: flex;
+  align-items: center;
+  background-color: rgb(96, 108, 56);
+  margin: 15px;
+  margin-top: 5px;
+  border-radius: 13px;
+  height: 100px;
+  padding: 15px;
+
+  font-size: 25px;
+}
+
+.navbar-placeholder-text {
+  margin: 0px;
+  color: rgb(30, 30, 30);
+  user-select: none;
+}
