@@ -205,12 +205,14 @@ function renderNavNotes() {
       const html = `
       <div class='navbox' data-index="${index}">
         <div class="top-navbox">
-          <p class='nav-note-title'>${titleTruncated || '[blank]'}</p>
+          <p class='nav-note-title'>${
+            titleTruncated || CONFIG.PLACEHOLDER_TEXT
+          }</p>
           <button class="delete-navbox-button">X</button>
         </div>
         
         <p class='nav-note-excerpt'>
-          ${contentTruncated || '[blank]'}
+          ${contentTruncated || CONFIG.PLACEHOLDER_TEXT}
         </p>
       </div>
     `;
