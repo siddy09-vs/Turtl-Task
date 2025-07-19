@@ -1,0 +1,62 @@
+.navbar {
+  position: fixed;
+
+  background-color: rgb(30, 54, 24);
+  height: 443px;
+  width: 213px;
+  border-radius: 13px;
+  margin-top: 125px;
+  margin-left: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 11px;
+  box-shadow: 0 4 4 black;
+}
+
+.navbox {
+  background-color: rgb(96, 108, 56);
+  width: 193px;
+  height: 80px;
+  border-radius: 13px;
+  transition: background-color 0.1s;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.navbox-icon {
+  width: 39px;
+  height: 39px;
+  margin-left: 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbox-name {
+  font-size: 24px;
+  margin-left: 15px;
+  user-select: none;
+  color: rgb(30, 30, 30);
+  text-decoration: none;
+}
+
+.navbox-name:hover {
+  color: rgb(30, 30, 30);
+  text-decoration: none;
+}
+.navbox-name:active {
+  color: rgb(30, 30, 30);
+}
+
+.navbox:hover {
+  background-color: rgb(88, 95, 50);
+}
+
+.navbox:active {
+  background-color: rgb(72, 82, 40);
+  cursor: pointer;
+}
